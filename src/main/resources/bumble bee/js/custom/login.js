@@ -1,17 +1,20 @@
 
 
 //LOGIN FUNCTION -START
-$('#loginForm').submit(function (e) {
+function loginUser(){
     console.log('start');
+//	var username = document.getElementById('username');
+//	var password = document.getElementById('password');
+	    var txtInputEmail = $("#txtInputEmail").val();
+        var txtInputPassword = $("#txtInputPassword").val();
+	const loginRequestObject = {username: txtInputEmail, password: txtInputPassword};
 
-    var txtInputEmail = $("#txtInputEmail").val();
-    var txtInputPassword = $("#txtInputPassword").val();
     //VALIDATION START
     if (txtInputEmail == "") {
         $("#txtInputEmail").focus();
         $.alert({
             title: "Alert!",
-            content: "Please Insert User Mail address.",
+            content: "Please Insert User Name.",
             icon: "fa fa-exclamation-triangle",
             type: "red",
             buttons: {
@@ -42,39 +45,27 @@ $('#loginForm').submit(function (e) {
     }
     //VALIDATION END
 
-    var formData = $("#loginForm").serialize();
-    e.preventDefault();
-
-    var formData = $(this).serializeArray();
-    var values = {};
-    $.map(formData, function (n, i) {
-        values[n['name']] = n['value'];
-    });
-
-    $.ajax({
-        url: 'http://localhost:8085/user/login',
-        type: 'POST',
-        headers: {
-            "Content-Type": "application/json"
-        },
-        dataType: 'json',
-        data: JSON.stringify(values),
-        success: function (data) {
-            console.log(data);
-            if (data.statusCode == 1000) {
-                alert(data.message);
-                if (data.data.userType == 2) {
-                    localStorage.setItem("userId", data.data.userId);
-                    window.location.href = "customer-view.html";
-                }else if(data.data.userType == 1) {
-                    localStorage.setItem("userId", data.data.userId);
-                    window.location.href = "index.html";
-                }
-            } else {
-                alert(data.message);
-            }
-        }
-    });
+	$.ajax({
+          type: 'POST',
+          dataType:"json",
+          url: 'http://localhost:8080/user/login',
+          data: JSON.stringify(loginRequestObject),
+          headers:{
+              'Content-Type' : 'application/json',
+          },
+          success: function (data) {
+            console.log('data: ', data);
+			if(data.status == 3000){
+				localStorage.setItem("firstName",data.value.firstName);
+				localStorage.setItem("lastName",data.value.lastName);
+				localStorage.setItem("userId",data.value.userId);
+				localStorage.setItem("userType",data.value.userType);
+				window.location.href = "index.html";
+			}else{
+				alert(data.msg);
+			}
+          }
     console.log('end');
 });
 //LOGIN FUNCTION -END
+}

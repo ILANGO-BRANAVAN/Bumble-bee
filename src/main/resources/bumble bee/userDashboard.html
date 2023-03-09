@@ -60,23 +60,22 @@
             <!-- Nav Item - Pages Collapse Menu -->
 
             <!-- Nav Item - manage-user -->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="manage-user.html">-->
+<!--                    <i class='fas fa-user-astronaut' style='font-size:18px'></i>-->
+<!--                    <span>Users</span></a>-->
+<!--            </li>-->
             <li class="nav-item">
-                <a class="nav-link" href="manage-user.html">
-                    <i class='fas fa-user-astronaut' style='font-size:18px'></i>
-                    <span>Users</span></a>
+                <a class="nav-link" href="manage-product.html">
+                    <i class='far fa-address-card' style='font-size:18px'></i>
+                    <span>Manage Product</span></a>
             </li>
-            <!-- Nav Item - manage-User -->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="manage-driver.html">-->
-<!--                    <i class='far fa-address-card' style='font-size:18px'></i>-->
-<!--                    <span>Drivers</span></a>-->
-<!--            </li>-->
-<!--            &lt;!&ndash; Nav Item - manage-Product  &ndash;&gt;-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="manage-Product .html">-->
-<!--                    <i class='fas fa-car' style='font-size:18px'></i>-->
-<!--                    <span>Product </span></a>-->
-<!--            </li>-->
+
+            <li class="nav-item">
+                <a class="nav-link" href="manage-product.html">
+                    <i class='fas fa-car' style='font-size:18px'></i>
+                    <span>Manage Order</span></a>
+            </li>
             <hr class="sidebar-divider">
 
         </ul>
@@ -347,14 +346,9 @@
         $(document).ready(function () {
             var userId = 0;
             userId = localStorage.getItem("userId");
-            userType = localStorage.getItem("userType");
-
             console.log("userid-".userId);
             if (userId == 0 || userId == undefined) {
                 window.location.href = "login.html";
-            }
-            if (userType == 2) {
-                window.location.href = "userDashboard.html";
             }
         });
     </script>

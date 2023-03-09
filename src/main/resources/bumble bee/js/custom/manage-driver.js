@@ -8,24 +8,24 @@ $(document).ready(function () {
 
     // FOR GET ALL DRIVERS AND APPEND IN TABLE --START
     $.ajax({
-        url: 'http://localhost:8086/vehicle/get/categories',
+        url: 'http://localhost:8086/Product /get/categories',
         type: 'POST',
         dataType: 'json',
         success: function (data) {
             if(data.statusCode == 1000){
                 var obj = data.data;
                 $.each(obj, function(i,v){
-                    // console.log(v.vehicleCategoryId);
-                    // console.log(v.vehicleCategoryName);
+                    // console.log(v.Product CategoryId);
+                    // console.log(v.Product CategoryName);
 
                     $('#vechileCatTable').find('tbody')
                         .append('<tr>')
-                        .append('<td>' + v.vehicleCategoryId + '</td>')
-                        .append('<td>' + v.vehicleCategoryName + '</td>')
+                        .append('<td>' + v.Product CategoryId + '</td>')
+                        .append('<td>' + v.Product CategoryName + '</td>')
                         .append('</tr>');
 
 
-                    $('#vehicleCategoryId').append('<option value="' + v.vehicleCategoryId + '">' + v.vehicleCategoryName + '</option>');
+                    $('#Product CategoryId').append('<option value="' + v.Product CategoryId + '">' + v.Product CategoryName + '</option>');
                 });
             }else{
                 alert('Error');
@@ -33,20 +33,20 @@ $(document).ready(function () {
         }
     });
     // FOR GET ALL DRIVERS AND APPEND IN TABLE --END
-// FOR GET VEHICLE DETAILS AND APPEND IN DROPDOWN --START
+// FOR GET Product  DETAILS AND APPEND IN DROPDOWN --START
     $.ajax({
-        url: 'http://localhost:8086/vehicle/get/detail/list',
+        url: 'http://localhost:8086/Product /get/detail/list',
         type: 'POST',
         dataType: 'json',
         success: function (data) {
             if(data.statusCode == 1000){
                 var obj = data.data;
                 var x=1;
-                $('#vehicleTable').find('tbody').html("");
+                $('#Product Table').find('tbody').html("");
                 $.each(obj, function(i,v){
-                    //console.log("vechile id is " + v.vehicleId);
-                    var vehicle=v.brandName+"-"+v.modelName
-                    $('#vehicleDetailId').append('<option value="' + v.vehicleId + '">' + vehicle + '</option>');
+                    //console.log("vechile id is " + v.Product Id);
+                    var Product =v.brandName+"-"+v.modelName
+                    $('#Product DetailId').append('<option value="' + v.Product Id + '">' + Product  + '</option>');
 
                     x++;
                 });
@@ -55,10 +55,10 @@ $(document).ready(function () {
             }
         }
     });
-// FOR GET VEHICLE DETAILS AND APPEND IN DROPDOWN --END
+// FOR GET Product  DETAILS AND APPEND IN DROPDOWN --END
 });
 
-// FOR CREATE DRIVER  --START
+// FOR CREATE User  --START
 $('#createDriver').submit(function(e){
     console.log('start');
     var formData = $("#createDriver").serialize();
@@ -90,4 +90,4 @@ $('#createDriver').submit(function(e){
     });
     console.log('end');
 });
-// FOR CREATE DRIVER  --END
+// FOR CREATE User  --END

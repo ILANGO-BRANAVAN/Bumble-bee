@@ -313,7 +313,7 @@ ambulance:
       - help
       - hospital
       - support
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f0f9
@@ -1635,7 +1635,7 @@ bicycle:
       - gears
       - pedal
       - transportation
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f206
@@ -2470,7 +2470,7 @@ bus:
       - public transportation
       - transportation
       - travel
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f207
@@ -2485,7 +2485,7 @@ bus-alt:
       - public transportation
       - transportation
       - travel
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f55e
@@ -2860,7 +2860,7 @@ car:
       - sedan
       - transportation
       - travel
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f1b9
@@ -2878,7 +2878,7 @@ car-alt:
       - sedan
       - transportation
       - travel
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f5de
@@ -2909,7 +2909,7 @@ car-crash:
       - insurance
       - sedan
       - transportation
-      - vehicle
+      - Product 
       - wreck
   styles:
     - solid
@@ -2926,7 +2926,7 @@ car-side:
       - sedan
       - transportation
       - travel
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f5e4
@@ -3367,7 +3367,7 @@ charging-station:
       - electric
       - ev
       - tesla
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f5e7
@@ -13094,7 +13094,7 @@ motorcycle:
       - bike
       - machine
       - transportation
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f21c
@@ -16488,7 +16488,7 @@ shuttle-van:
       - public-transportation
       - transportation
       - travel
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f5b6
@@ -18168,7 +18168,7 @@ subway:
       - railway
       - train
       - transportation
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f239
@@ -18597,7 +18597,7 @@ taxi:
       - transportation
       - travel
       - uber
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f1ba
@@ -19334,7 +19334,7 @@ tractor:
     terms:
       - agriculture
       - farm
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f722
@@ -19584,7 +19584,7 @@ truck:
       - cargo
       - delivery
       - shipping
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f0d1
@@ -19601,7 +19601,7 @@ truck-loading:
       - inventory
       - moving
       - rental
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f4de
@@ -19613,7 +19613,7 @@ truck-monster:
   search:
     terms:
       - offroad
-      - vehicle
+      - Product 
       - wheel
   styles:
     - solid
@@ -19628,7 +19628,7 @@ truck-moving:
       - cargo
       - inventory
       - rental
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f4df
@@ -19640,7 +19640,7 @@ truck-pickup:
   search:
     terms:
       - cargo
-      - vehicle
+      - Product 
   styles:
     - solid
   unicode: f63c

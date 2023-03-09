@@ -65,17 +65,17 @@
                     <i class='fas fa-user-astronaut' style='font-size:18px'></i>
                     <span>Users</span></a>
             </li>
-            <!-- Nav Item - manage-driver -->
+            <!-- Nav Item - manage-User -->
             <li class="nav-item">
                 <a class="nav-link" href="manage-driver.html">
                     <i class='far fa-address-card' style='font-size:18px'></i>
                     <span>Drivers</span></a>
             </li>
-            <!-- Nav Item - manage-vehicle -->
+            <!-- Nav Item - manage-Product  -->
             <li class="nav-item active">
-                <a class="nav-link" href="manage-vehicle.html">
+                <a class="nav-link" href="manage-Product .html">
                     <i class='fas fa-car' style='font-size:18px'></i>
-                    <span>Vehicle</span></a>
+                    <span>Product </span></a>
             </li>
             <hr class="sidebar-divider">
 
@@ -133,33 +133,33 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#createVehicleCategory">
+                    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#createProduct Category">
                         <i class="fas fa-plus-circle fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Create Vehicle Category
+                        Create Product  Category
                     </a>
-                    <a class="btn btn-primary mx-3" href="#" data-toggle="modal" data-target="#createVehicle">
+                    <a class="btn btn-primary mx-3" href="#" data-toggle="modal" data-target="#createProduct ">
                         <i class="fas fa-plus-circle fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Create Vehicle
+                        Create Product
                     </a>
 
                     <br>
-                    <!-- VEHICLE CATEGORY Table -->
+                    <!-- Product  CATEGORY Table -->
                     <div class="card shadow mb-4 mt-3">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Vehicle Category</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Product  Category</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="vechileCatTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Vehicle Category Id</th>
+                                            <th>Product  Category Id</th>
                                             <th>Name</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Vehicle Category Id</th>
+                                            <th>Product  Category Id</th>
                                             <th>Name</th>
                                         </tr>
                                     </tfoot>
@@ -171,17 +171,17 @@
                         </div>
                     </div>
 
-                    <!-- VEHICLE DETAIL Table -->
+                    <!-- Product  DETAIL Table -->
                     <div class="card shadow mb-4 mt-3">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Vehicle</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Product </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="vehicleTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="Product Table" width="100%" cellspacing="0">
                                     <thead>
                                     <tr>
-                                        <th>Vehicle Id</th>
+                                        <th>Product  Id</th>
                                         <th>Name</th>
                                         <th>Model</th>
                                         <th>Category</th>
@@ -189,7 +189,7 @@
                                     </thead>
                                     <tfoot>
                                     <tr>
-                                        <th>Vehicle Id</th>
+                                        <th>Product  Id</th>
                                         <th>Name</th>
                                         <th>Model</th>
                                         <th>Category</th>
@@ -212,7 +212,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Bumble bee Online Cab Service</span>
+                        <span>Bumble bee Online Loan Service</span>
                     </div>
                 </div>
             </footer>
@@ -230,20 +230,20 @@
     </a>
 
     <!-- CREATE VECHILE CATEGORY -- START-->
-    <div class="modal fade" id="createVehicleCategory" tabindex="-1" role="dialog"
-        aria-labelledby="createVehicleCategory" aria-hidden="true">
+    <div class="modal fade" id="createProduct Category" tabindex="-1" role="dialog"
+        aria-labelledby="createProduct Category" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Create Vehicle Category</h5>
+                    <h5 class="modal-title">Create Product  Category</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <form class="user" id="createVeCategory">
                     <div class="col-sm-11 mb-sm-0 mx-auto mt-3 m">
-                        <input type="text" class="form-control form-control-user" id="vehicleCategoryName" name="vehicleCategoryName"
-                            placeholder="Vehicle Name">
+                        <input type="text" class="form-control form-control-user" id="Product CategoryName" name="Product CategoryName"
+                            placeholder="Product  Name">
                     </div>
 
                     <div class="modal-footer mt-3">
@@ -256,34 +256,34 @@
     </div>
     <!-- CREATE VECHILE CATEGORY -- END-->
 
-    <!-- Create Vehicle Modal-->
-    <div class="modal fade" id="createVehicle" tabindex="-1" role="dialog" aria-labelledby="createVehicle"
+    <!-- Create Product  Modal-->
+    <div class="modal fade" id="createProduct " tabindex="-1" role="dialog" aria-labelledby="createProduct "
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Create Vehicle</h5>
+                    <h5 class="modal-title">Create Product </h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <form class="user" id="creteVehicle">
+                <form class="user" id="creteProduct ">
                     <div class="mt-3 mb-3 mx-3 my-3">
                         <div class="form-group">
                             <div class=" mb-3 mb-sm-0 mx-auto">
                                 <input type="text" class="form-control form-control-user" id="brandName" name="brandName"
-                                    placeholder="Vehicle Brand">
+                                    placeholder="Product  Brand">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="mb-3 mb-sm-0 mx-auto">
                                 <input type="text" class="form-control form-control-user" id="modelName" name="modelName"
-                                    placeholder="Vehicle Model">
+                                    placeholder="Product  Model">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="vehicleCategoryId" class="mx-auto">Vehicle Category</label>
-                            <select id="vehicleCategoryId" class="form-control mx-auto" name="vehicleCategoryId">
+                            <label for="Product CategoryId" class="mx-auto">Product  Category</label>
+                            <select id="Product CategoryId" class="form-control mx-auto" name="Product CategoryId">
                                 <option selected>Choose...</option>
                             </select>
                         </div>
@@ -336,7 +336,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-    <script src="js/custom/manage-vehicle.js"></script>
+    <script src="js/custom/manage-Product .js"></script>
 </body>
 
 </html>

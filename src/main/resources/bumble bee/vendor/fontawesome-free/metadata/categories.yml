@@ -2470,7 +2470,7 @@ users-people:
     - walking
     - wheelchair
   label: Users & People
-vehicles:
+Product s:
   icons:
     - accessible-icon
     - ambulance
@@ -2504,7 +2504,7 @@ vehicles:
     - truck-monster
     - truck-pickup
     - wheelchair
-  label: Vehicles
+  label: Product s
 weather:
   icons:
     - bolt
